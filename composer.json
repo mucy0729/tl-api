@@ -1,16 +1,16 @@
 {
-  "name": "zeevin/libaip",
-  "description": "libaip",
+  "name": "mucy0729/tl-api",
+  "description": "tl-api",
   "type": "library",
   "license": "MIT",
-  "homepage": "https://github.com/zeevin/libaip",
+  "homepage": "https://github.com/mucy0729/tl-api",
   "keywords": [
     "aip"
   ],
   "authors": [
     {
-      "name": "CaoKang",
-      "email": "caokang@outlook.com"
+      "name": "Qdd",
+      "email": "qdd@7dingdong.com"
     }
   ],
   "require-dev": {

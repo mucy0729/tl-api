@@ -199,7 +199,7 @@ class AgentCollectApply
      */
     public function getValidateType()
     {
-        return $this->arrears_list;
+        return $this->validate_type;
     }
 
     /**

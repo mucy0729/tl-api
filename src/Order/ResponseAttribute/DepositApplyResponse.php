@@ -46,7 +46,20 @@ class DepositApplyResponse extends BaseResponseAttribute
      * @JMS\Type("string")
      */
     protected $biz_user_id;
+    /**
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("validate_type")
+     * @JMS\Type("string")
+     */
+    protected $validate_type;
 
+    /**
+     * @return mixed
+     */
+    public function getValidateType()
+    {
+        return $this->validate_type;
+    }
     /**
      * @return mixed
      */

@@ -39,7 +39,20 @@ class AgentCollectApplyResponse extends BaseResponseAttribute
      * @JMS\Type("string")
      */
     protected $biz_order_no;
+    /**
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("validate_type")
+     * @JMS\Type("string")
+     */
+    protected $validate_type;
 
+    /**
+     * @return mixed
+     */
+    public function getValidateType()
+    {
+        return $this->validate_type;
+    }
     /**
      * @return mixed
      */

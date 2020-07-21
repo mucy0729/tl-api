@@ -118,6 +118,13 @@ class AgentCollectApplyRequest extends BaseRequestAttribute
     protected $project_extension;
 
     /**
+     * @var AgentCollectApply
+     * @JMS\XmlElement(cdata=false)
+     * @JMS\Type("Zeevin\Libaip\Core\Struct\ProjectExtension\AgentCollectApply")
+     */
+    protected $validate_type;
+
+    /**
      * @return mixed
      */
     public function getPayerId()
@@ -133,6 +140,25 @@ class AgentCollectApplyRequest extends BaseRequestAttribute
     public function setPayerId($payer_id)
     {
         $this->payer_id = $payer_id;
+
+        return $this;
+    }
+    /**
+     * @return mixed
+     */
+    public function getValidateType()
+    {
+        return $this->validate_type;
+    }
+
+    /**
+     * @param mixed $validate_type
+     *
+     * @return AgentCollectApplyRequest
+     */
+    public function setValidateType($validate_type)
+    {
+        $this->validate_type = $validate_type;
 
         return $this;
     }

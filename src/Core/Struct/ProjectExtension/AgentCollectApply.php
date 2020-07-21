@@ -50,6 +50,12 @@ class AgentCollectApply
     protected $arrears_list;
 
     /**
+     * @JMS\XmlElement(cdata=false)
+     * @JMS\Type("array<array>")
+     */
+    protected $validate_type;
+
+    /**
      * @return mixed
      */
     public function getProjectOrderId()
@@ -185,6 +191,25 @@ class AgentCollectApply
     public function setArrearsList($arrears_list)
     {
         $this->arrears_list = $arrears_list;
+
+        return $this;
+    }
+    /**
+     * @return mixed
+     */
+    public function getValidateType()
+    {
+        return $this->arrears_list;
+    }
+
+    /**
+     * @param mixed $validate_type
+     *
+     * @return AgentCollectApply
+     */
+    public function setValidateType($validate_type)
+    {
+        $this->validate_type = $validate_type;
 
         return $this;
     }

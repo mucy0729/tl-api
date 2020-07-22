@@ -25,6 +25,9 @@ class ServiceProvider implements ServiceProviderInterface
         $app['order_payFrontSms'] = function ($app) {
             return new PayFrontSmsClient($app);
         };
+        $app['order_paySms'] = function ($app) {
+            return new PaySmsClient($app);
+        };
         $app['order_queryBalance'] = function ($app) {
             return new QueryBalanceClient($app);
         };

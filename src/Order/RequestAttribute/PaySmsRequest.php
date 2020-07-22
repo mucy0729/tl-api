@@ -14,7 +14,7 @@ use JMS\Serializer\Annotation\SerializedName;
 use Symfony\Component\HttpFoundation\Request;
 use Zeevin\Libaip\Core\BaseRequestAttribute;
 
-class PayFrontSmsRequest extends BaseRequestAttribute
+class PaySmsRequest extends BaseRequestAttribute
 {
     /**
      * @JMS\XmlElement(cdata=false)
@@ -44,7 +44,6 @@ class PayFrontSmsRequest extends BaseRequestAttribute
      * @JMS\Type("string")
      */
     protected $consumer_ip;
-
     /**
      * @JMS\XmlElement(cdata=false)
      * @SerializedName("trade_no")
@@ -71,7 +70,6 @@ class PayFrontSmsRequest extends BaseRequestAttribute
 
         return $this;
     }
-
 
     /**
      * @return mixed
@@ -100,6 +98,7 @@ class PayFrontSmsRequest extends BaseRequestAttribute
     {
         return $this->biz_order_no;
     }
+
 
     /**
      * @param $biz_order_no

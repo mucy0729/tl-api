@@ -52,7 +52,20 @@ class DepositApplyResponse extends BaseResponseAttribute
      * @JMS\Type("string")
      */
     protected $validate_type;
+    /**
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("pay_status")
+     * @JMS\Type("string")
+     */
+    protected $pay_status;
 
+    /**
+     * @return mixed
+     */
+    public function getPayStatus()
+    {
+        return $this->pay_status;
+    }
     /**
      * @return mixed
      */

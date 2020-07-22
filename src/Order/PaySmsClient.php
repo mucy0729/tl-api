@@ -10,7 +10,7 @@
 namespace Zeevin\Libaip\Order;
 
 use Zeevin\Libaip\Core\BaseClient;
-use Zeevin\Libaip\Order\ResponseAttribute\PayFrontSmsResponse;
+use Zeevin\Libaip\Order\ResponseAttribute\PaySmsResponse;
 
 /**
  * Class PaySmsClient.

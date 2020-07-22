@@ -18,6 +18,7 @@ use Zeevin\Libaip\Core\ServiceContainer;
  * @property \Zeevin\Libaip\User\CreateMemberClient $user_createMember
  * @property \Zeevin\Libaip\Order\DepositApplyClient $order_depositApply
  * @property \Zeevin\Libaip\Order\PayFrontSmsClient $order_payFrontSms
+ * @property \Zeevin\Libaip\Order\PaySmsClient $order_paySms
  * @property \Zeevin\Libaip\Order\QueryBalanceClient $order_queryBalance
  * @property \Zeevin\Libaip\Order\WithdrawApplyClient $order_withdrawApply
  * @property \Zeevin\Libaip\Order\ConsumeApplyClient $order_consumeApply

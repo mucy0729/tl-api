@@ -31,5 +31,11 @@ class ServiceProvider implements ServiceProviderInterface
         $app['user_unbindBankCard'] = function ($app) {
             return new UnbindBankCardClient($app);
         };
+        $app['user_freezeMoney'] = function ($app) {
+            return new FreezeMoneyClient($app);
+        };
+        $app['user_unfreezeMoney'] = function ($app) {
+            return new UnfreezeMoneyClient($app);
+        };
     }
 }

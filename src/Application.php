@@ -16,6 +16,8 @@ use Zeevin\Libaip\Core\ServiceContainer;
  *
  * @property \DusanKasan\Knapsack\Collection $config;
  * @property \Zeevin\Libaip\User\CreateMemberClient $user_createMember
+ * @property \Zeevin\Libaip\User\UnfreezeMoneyClient $user_unfreezeMoney
+ * @property \Zeevin\Libaip\User\FreezeMoneyClient $user_freezeMoney
  * @property \Zeevin\Libaip\Order\DepositApplyClient $order_depositApply
  * @property \Zeevin\Libaip\Order\PayFrontSmsClient $order_payFrontSms
  * @property \Zeevin\Libaip\Order\PaySmsClient $order_paySms

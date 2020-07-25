@@ -118,9 +118,9 @@ class AgentCollectApplyRequest extends BaseRequestAttribute
     protected $project_extension;
 
     /**
-     * @var AgentCollectApply
      * @JMS\XmlElement(cdata=false)
-     * @JMS\Type("Zeevin\Libaip\Core\Struct\ProjectExtension\AgentCollectApply")
+     * @SerializedName("validate_type")
+     * @JMS\Type("integer")
      */
     protected $validate_type;
 

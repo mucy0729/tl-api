@@ -163,7 +163,7 @@ abstract class BaseClient
         if ($format == 'json') {
             $this->result = $body;
         } elseif ($format == 'array') {
-            $this->result = json_decode($body, true);
+            $this->result = is_array($body) ? $body : json_decode($body, true);
         } elseif ($format == 'object') {
             if ($body_array['status'] != 200) {
                 $object = 'Zeevin\Core\BaseResponseAttribute';

@@ -96,7 +96,61 @@ class DepositApplyRequest extends BaseRequestAttribute
     protected $front_url;
 
     /**
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("payer_id")
+     * @JMS\Type("string")
+     */
+    protected $payer_id;
+
+    /**
+     * @JMS\XmlElement(cdata=false)
+     * @SerializedName("validate_type")
+     * @JMS\Type("integer")
+     */
+    protected $validate_type;
+
+    /**
+     * @return mixed
+     */
+    public function getPayerId()
+    {
+        return $this->payer_id;
+    }
+
+    /**
+     * @param mixed $payer_id
+     *
+     * @return $this
+     */
+    public function setPayerId($payer_id)
+    {
+        $this->payer_id = $payer_id;
+
+        return $this;
+    }
+    /**
+     * @return mixed
+     */
+    public function getValidateType()
+    {
+        return $this->validate_type;
+    }
+
+    /**
+     * @param mixed $validate_type
+     *
+     * @return $this
+     */
+    public function setValidateType($validate_type)
+    {
+        $this->validate_type = $validate_type;
+
+        return $this;
+    }
+    
+    /**
      * @return string
+
      */
     public function getBizUserId(): string
     {

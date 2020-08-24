@@ -64,6 +64,43 @@ class ApplicationTransferRequest extends BaseRequestAttribute
         $this->target_biz_user_id = $target_biz_user_id;
         return $this;
     }
+    /**
+     * @return string
+     */
+    public function getSourceAccountSetNo(): string
+    {
+        return $this->source_account_set_no;
+    }
+
+    /**
+     * @param string $source_account_set_no
+     *
+     * @return ApplicationTransferRequest
+     */
+    public function setSourceAccountSetNo(string $source_account_set_no): self
+    {
+        $this->source_account_set_no = $source_account_set_no;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTargetAccountSetNo(): string
+    {
+        return $this->target_account_set_no;
+    }
+
+    /**
+     * @param string $target_account_set_no
+     *
+     * @return ApplicationTransferRequest
+     */
+    public function setTargetAccountSetNo(string $target_account_set_no): self
+    {
+        $this->target_account_set_no = $target_account_set_no;
+        return $this;
+    }
 
     /**
      * @return mixed
@@ -108,7 +145,7 @@ class ApplicationTransferRequest extends BaseRequestAttribute
     /**
      * @return ApplicationTransfer
      */
-    public function getProjectExtension(): ApplicationTransfer
+    public function getProjectExtension()
     {
         if (!$this->project_extension instanceof ApplicationTransfer) {
             $this->project_extension = new ApplicationTransfer();
@@ -116,4 +153,17 @@ class ApplicationTransferRequest extends BaseRequestAttribute
 
         return $this->project_extension;
     }
+
+    /**
+     * @param mixed $project_extension
+     *
+     * @return ApplicationTransferRequest
+     */
+    public function setProjectExtension($project_extension)
+    {
+        $this->project_extension = $project_extension;
+
+        return $this;
+    }
+
 }

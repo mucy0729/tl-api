@@ -5,7 +5,6 @@ use JMS\Serializer\Annotation as JMS;
 use JMS\Serializer\Annotation\SerializedName;
 use Zeevin\Libaip\Core\BaseRequestAttribute;
 use Zeevin\Libaip\Core\Struct\ProjectExtension\ApplicationTransfer;
-use Zeevin\Libaip\Core\Struct\ProjectExtension\ConsumeApply;
 
 class ApplicationTransferRequest extends BaseRequestAttribute
 {

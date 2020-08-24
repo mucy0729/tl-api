@@ -46,5 +46,8 @@ class ServiceProvider implements ServiceProviderInterface
         $app['order_consumeProtocolApply'] = function ($app) {
             return new ConsumeProtocolApplyClient($app);
         };
+        $app['order_applicationTransferClient'] = function ($app) {
+            return new ApplicationTransferClient($app);
+        };
     }
 }

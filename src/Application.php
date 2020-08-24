@@ -31,6 +31,7 @@ use Zeevin\Libaip\Core\ServiceContainer;
  * @property \Zeevin\Libaip\Order\SingleAgentPayClient $order_singleAgentPay
  * @property \Zeevin\Libaip\Order\ConsumeProtocolApplyClient $order_consumeProtocolApply
  * @property \Zeevin\Libaip\User\UnbindBankCardClient $user_unbindBankCard
+ * @property \Zeevin\Libaip\Order\ApplicationTransferClient $order_applicationTransferClient
  */
 class Application extends ServiceContainer
 {

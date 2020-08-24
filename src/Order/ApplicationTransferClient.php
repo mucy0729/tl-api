@@ -2,12 +2,12 @@
 namespace Zeevin\Libaip\Order;
 
 use Zeevin\Libaip\Core\BaseClient;
-use Zeevin\Libaip\Order\ResponseAttribute\ConsumeProtocolApplyResponse;
+use Zeevin\Libaip\Order\ResponseAttribute\ApplicationTransferResponse;
 
 /**
- * Class ConsumeProtocolApplyClient.
+ * Class ApplicationTransferClient.
  *
- * @method ConsumeProtocolApplyResponse getResult($format = 'object', $extendNameSpace = null)
+ * @method ApplicationTransferResponse getResult($format = 'object', $extendNameSpace = null)
  */
 class ApplicationTransferClient extends BaseClient
 {

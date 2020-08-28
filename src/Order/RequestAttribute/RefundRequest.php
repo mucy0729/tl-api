@@ -10,6 +10,12 @@ class RefundRequest extends BaseRequestAttribute
 {
     /**
      * @JMS\XmlElement(cdata=false)
+     * @SerializedName("ori_biz_order_no")
+     * @JMS\Type("string")
+     */
+    protected $ori_biz_order_no;
+    /**
+     * @JMS\XmlElement(cdata=false)
      * @SerializedName("biz_user_id")
      * @JMS\Type("string")
      */
@@ -53,6 +59,25 @@ class RefundRequest extends BaseRequestAttribute
     protected $project_extension;
 
 
+    /**
+     * @return mixed
+     */
+    public function getOriBizOrderNo()
+    {
+        return $this->ori_biz_order_no;
+    }
+
+    /**
+     * @param mixed $ori_biz_order_no
+     *
+     * @return RefundRequest
+     */
+    public function setOriBizOrderNo($ori_biz_order_no)
+    {
+        $this->ori_biz_order_no = $ori_biz_order_no;
+        return $this;
+    }
+    
     /**
      * @return mixed
      */

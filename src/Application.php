@@ -1,12 +1,4 @@
 <?php
-/**
- * @author Cao Kang(caokang@outlook.com)
- * Date: 2019/12/17
- * Time: 18:26
- * Source: Application.php
- * Project: libaip
- */
-
 namespace Zeevin\Libaip;
 
 use Zeevin\Libaip\Core\ServiceContainer;
@@ -32,6 +24,7 @@ use Zeevin\Libaip\Core\ServiceContainer;
  * @property \Zeevin\Libaip\Order\ConsumeProtocolApplyClient $order_consumeProtocolApply
  * @property \Zeevin\Libaip\User\UnbindBankCardClient $user_unbindBankCard
  * @property \Zeevin\Libaip\Order\ApplicationTransferClient $order_applicationTransferClient
+ * @property \Zeevin\Libaip\Order\RefundClient $order_refundClient
  */
 class Application extends ServiceContainer
 {

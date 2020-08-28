@@ -49,5 +49,8 @@ class ServiceProvider implements ServiceProviderInterface
         $app['order_applicationTransferClient'] = function ($app) {
             return new ApplicationTransferClient($app);
         };
+        $app['order_refundClient'] = function ($app) {
+            return new RefundClient($app);
+        };
     }
 }

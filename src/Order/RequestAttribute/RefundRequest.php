@@ -196,7 +196,7 @@ class RefundRequest extends BaseRequestAttribute
     /**
      * @return Refund
      */
-    public function getProjectExtension():Refund
+    public function getProjectExtension(): Refund
     {
         if (!$this->project_extension instanceof Refund) {
             $this->project_extension = new Refund();

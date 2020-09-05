@@ -25,6 +25,7 @@ use Zeevin\Libaip\Core\ServiceContainer;
  * @property \Zeevin\Libaip\User\UnbindBankCardClient $user_unbindBankCard
  * @property \Zeevin\Libaip\Order\ApplicationTransferClient $order_applicationTransferClient
  * @property \Zeevin\Libaip\Order\RefundClient $order_refundClient
+ * @property \Zeevin\Libaip\Order\AgentCollectProtocolApplyClient $order_agentCollectProtocolApplyClient
  */
 class Application extends ServiceContainer
 {

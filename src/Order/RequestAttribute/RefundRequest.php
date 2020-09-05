@@ -77,7 +77,7 @@ class RefundRequest extends BaseRequestAttribute
         $this->ori_biz_order_no = $ori_biz_order_no;
         return $this;
     }
-    
+
     /**
      * @return mixed
      */

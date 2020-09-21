@@ -64,7 +64,7 @@ class AgentCollectProtocolApplyRequest extends BaseRequestAttribute
 
     /**
      * @JMS\XmlElement(cdata=false)
-     * @SerializedName("reciever_list")
+     * @SerializedName("receiver_list")
      * @JMS\Type("array<array>")
      */
     protected $receiver_list;

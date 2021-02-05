@@ -8,6 +8,7 @@ use Zeevin\Libaip\Core\ServiceContainer;
  *
  * @property \DusanKasan\Knapsack\Collection $config;
  * @property \Zeevin\Libaip\User\CreateMemberClient $user_createMember
+ * @property \Zeevin\Libaip\User\CreateBankSubAcctNoClient $user_createBankSubAcctNo
  * @property \Zeevin\Libaip\User\UnfreezeMoneyClient $user_unfreezeMoney
  * @property \Zeevin\Libaip\User\FreezeMoneyClient $user_freezeMoney
  * @property \Zeevin\Libaip\Order\DepositApplyClient $order_depositApply
